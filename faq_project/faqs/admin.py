@@ -7,5 +7,5 @@ class FAQAdmin(admin.ModelAdmin):
     search_fields = ('question', 'question_hi', 'question_bn')
 
     def get_translated_question(self, obj):
-        return obj.get_translated_question('hi')  # Example: Hindi translation
+        return obj.get_translated_question('hi')  
     get_translated_question.short_description = 'Translated Question'

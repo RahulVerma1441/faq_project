@@ -7,4 +7,4 @@ def translate_text(text, dest_lang):
         return translated.text
     except Exception as e:
         print(f"Translation failed: {e}")
-        return text  # Fallback to original text
+        return text  

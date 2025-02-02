@@ -4,11 +4,11 @@ from .utils import translate_text
 
 class FAQ(models.Model):
     question = models.TextField()
-    answer = RichTextField()  # WYSIWYG editor field
-    question_hi = models.TextField(blank=True, null=True)  # Hindi translation
-    question_bn = models.TextField(blank=True, null=True)  # Bengali translation
-    answer_hi = RichTextField(blank=True, null=True)  # Hindi translation
-    answer_bn = RichTextField(blank=True, null=True)  # Bengali translation
+    answer = RichTextField() 
+    question_hi = models.TextField(blank=True, null=True)  
+    question_bn = models.TextField(blank=True, null=True)  
+    answer_hi = RichTextField(blank=True, null=True) 
+    answer_bn = RichTextField(blank=True, null=True)  
 
     def get_translated_question(self, lang='en'):
         translations = {

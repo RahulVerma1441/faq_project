@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import FAQListView, home  # Ensure both are imported
+from .views import FAQListView, faq_frontend
 
 urlpatterns = [
-    path('', home, name='home'),  # Root URL
+    path('', faq_frontend, name='faq-frontend'),
     path('api/faqs/', FAQListView.as_view(), name='faq-list'),
 ]
